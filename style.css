@@ -1,6 +1,6 @@
 body {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-	background-image: url("images/maxresdefault.jpg");
+	background-image: url("images/10.jpg");
 	background-repeat: no-repeat;
 	background-size:cover;
 	background-position: top;
@@ -18,19 +18,23 @@ h1 {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 }
 .main {
+	height: 800px;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction:row
+	display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+	border: 1px red solid;
 }
-form {
+.feed {
 	height: 200px;
 	width: 500px;
 	display: flex;
-	flex-direction:column;
+	flex-direction:row;
 	justify-content: center;
 	align-items: center;
 	background-color: rgba(229,235,239,0.82);
+	border: 1px yellow solid;
 }
 .textArea {
 	height: 100px;
@@ -55,10 +59,24 @@ form {
 	border:1px solid #6AD1F2;
 	border-radius:5px; }
 
-.resposta{
+
+.parte2{
 	height: 200px;
 	width: 500px;
 	display: flex;
-	justify-content:center;
-	align-items:center; 
-	background-color: rgba(229,235,239,0.92);}
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(229,235,239,0.82);
+	border: 1px green solid;
+	}
+
+	section{
+		background-color:white;
+		height: 100px;
+	width: 450px;
+	display: flex;
+	justify-content: start;
+    align-items: start;
+	
+	}
