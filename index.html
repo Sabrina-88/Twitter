@@ -8,46 +8,53 @@
 
 <body>
 <header id="header">
-  <h1>Twitter</h1>
+  <h1 id="twitter">Twitter</h1>
 </header>
 <div class="main">
-<div class="feed">
-  <form>
-    <textArea class="textArea" id="oqueEscrevi" placeholder="What´s happening...">
+  <div class="feed">
+    <form id="formulario">
+      <textArea class="textArea" id="oqueEscrevi" placeholder="What´s happening..." value="">
 </textArea>
-<hr>
-    <button onclick="Twittar()" class="btn" id="botao">Tweetar</button>
-  </form>
+      <hr>
+      <button onclick="Twittar()" class="btn" id="botao">Tweetar</button>
+    </form>
+  </div>
+  <div id="parte2">
+    <div class="resposta" id="aparecerAqui"> </div>
 </div>
 
-<div class="parte2">
-<section class="resposta" id="aparecerAqui">
-
-</section>	
 </div>
 
-
-
-</div>
-</body>
 <script>
+ 
+ var limpar = document.getElementById("oqueEscrevi");
 function Twittar() {
-//Obtem o valor do elemento textfield e armazena na variável "valor"
-var valor = document.getElementById('oqueEscrevi').value;    
-//Para imprimir em um elemento específico
-document.getElementById('aparecerAqui').innerText = valor;
+
+var pegartweet =  document.getElementById("oqueEscrevi").value;
+console.log(pegartweet);//pegar todos os elementos
+var resposta = document.createElement('p');
+resposta.textContent = pegartweet;
+var postar =   document.getElementById("aparecerAqui");
+
+postar.appendChild(resposta);
 event.preventDefault();
+limpar.value = "";
+
+
 }
 
 
-//Para imprimir na página
-//document.write(valor);
+//var container = document.getElementById('container');
+//var secondParagraph = container.getElementsByTagName('p')[0];
+//container.insertBefore(resposta, secondParagraph);
+
+//Obtem o valor do elemento textfield e armazena na variável "valor"
+//var valor = document.getElementById('oqueEscrevi').value;    
+//Para imprimir em um elemento específico
+//document.getElementById('aparecerAqui').innerText = valor;
 
 
-
-//Para imprimir em um Input Text
-//document.getElementById('IdDoElementoInputText').value = valor;
-
-
+ 
 </script>
+
 </html>
