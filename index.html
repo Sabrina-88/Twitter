@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/javascript" href="app.js">
 <title>Twitter</title>
 </head>
 
@@ -23,24 +24,12 @@
     <div class="resposta" id="aparecerAqui"> </div>
   </div>
 </div>
-<script>
+
+
+ <script src="app.js"></script>
  
- var limpar = document.getElementById("oqueEscrevi");
-function Twittar() {
-
-var pegartweet =  document.getElementById("oqueEscrevi").value;
-console.log(pegartweet);//pegar todos os elementos
-var resposta = document.createElement('p');
-	resposta.textContent = pegartweet;
-var postar =   document.getElementById("aparecerAqui");
-
-postar.appendChild(resposta);
-event.preventDefault();
-limpar.value = "";
-
-
-}
  
-</script>
+ 
+
 </body>
 </html>
