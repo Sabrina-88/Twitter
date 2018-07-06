@@ -21,10 +21,8 @@
   </div>
   <div id="parte2">
     <div class="resposta" id="aparecerAqui"> </div>
+  </div>
 </div>
-
-</div>
-
 <script>
  
  var limpar = document.getElementById("oqueEscrevi");
@@ -33,7 +31,7 @@ function Twittar() {
 var pegartweet =  document.getElementById("oqueEscrevi").value;
 console.log(pegartweet);//pegar todos os elementos
 var resposta = document.createElement('p');
-resposta.textContent = pegartweet;
+	resposta.textContent = pegartweet;
 var postar =   document.getElementById("aparecerAqui");
 
 postar.appendChild(resposta);
@@ -42,19 +40,7 @@ limpar.value = "";
 
 
 }
-
-
-//var container = document.getElementById('container');
-//var secondParagraph = container.getElementsByTagName('p')[0];
-//container.insertBefore(resposta, secondParagraph);
-
-//Obtem o valor do elemento textfield e armazena na variável "valor"
-//var valor = document.getElementById('oqueEscrevi').value;    
-//Para imprimir em um elemento específico
-//document.getElementById('aparecerAqui').innerText = valor;
-
-
  
 </script>
-
+</body>
 </html>

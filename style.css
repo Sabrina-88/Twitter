@@ -2,8 +2,8 @@ body {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	background-image: url("images/10.jpg");
 	background-repeat: no-repeat;
-	    background-size: 100%;
-    background-position: bottom;
+	background-size: cover;
+	background-position: bottom;
 }
 #header {
 	height: 100px;
@@ -18,7 +18,7 @@ h1 {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 }
 .main {
-	height: 600px;
+	height: 800px;
 	display: flex;
 	justify-content: start;
 	align-items: center;
@@ -31,7 +31,7 @@ h1 {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	background-color:rgba(229,235,239,0.82);
+	background-color: #fff;/*rgba(229,235,239,0.82);*/
 }
 .textArea {
 	height: 100px;
@@ -66,13 +66,16 @@ hr {
 	background-color: rgba(229,235,239,0.82);
 }
 #aparecerAqui {
-	background-color:rgba(0,0,0,0.17);
 	height: 100px;
 	width: 450px;
 	display: block;
 	justify-content: start;
 	align-items: start;
-	margin:15px;
-	
+	margin: 15px;
 }
-
+p {
+	width: 442px;
+	margin-left: -26px;
+	background-color: white;
+	padding: 30px;
+}
