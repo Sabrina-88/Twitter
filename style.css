@@ -79,3 +79,12 @@ p {
 	background-color: white;
 	padding: 30px;
 }
+
+#restante{
+	display: flex;
+    justify-content: flex-end;
+	color: #6AD1F2;
+	font-size:14px;
+	font-size: 16px;
+    font-weight: 900;
+	}

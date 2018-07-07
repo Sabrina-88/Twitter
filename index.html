@@ -14,22 +14,17 @@
 <div class="main">
   <div class="feed">
     <form id="formulario">
-      <textArea class="textArea" id="oqueEscrevi" placeholder="What´s happening..." value="">
+      <textArea class="textArea" id="oqueEscrevi" placeholder="What´s happening..." value="" onKeyUp="caractere()" onKeyDown="caractere()" onKeyPress="caractere()">
 </textArea>
       <hr>
-      <button onclick="Twittar()" class="btn" id="botao">Tweetar</button>
+      <div id="restante"></div>
+      <button onclick="Twittar()" class="btn" id="botao" disabled>Tweetar</button>
     </form>
   </div>
   <div id="parte2">
     <div class="resposta" id="aparecerAqui"> </div>
   </div>
 </div>
-
-
- <script src="app.js"></script>
- 
- 
- 
-
+<script src="app.js"></script>
 </body>
 </html>
