@@ -34,3 +34,9 @@ function caractere(){
       }
 
 }
+
+//função acrescentar linha na textarea se for necessario
+function autoSize() {
+    document.getElementById('oqueEscrevi').rows += 1;
+}
+ 

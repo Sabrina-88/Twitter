@@ -14,8 +14,7 @@
 <div class="main">
   <div class="feed">
     <form id="formulario">
-      <textArea class="textArea" id="oqueEscrevi" placeholder="What´s happening..." value="" onKeyUp=""="caractere()" onKeyDown="caractere()" onKeyPress="caractere()"></textArea>
-
+      <textArea class="textArea" rows="6" id="oqueEscrevi"  placeholder="What´s happening..." value="" onKeyUp="caractere()" onKeyDown="caractere()" onKeyPress="autoSize()"></textArea>
       <hr>
       <span id="restante"></span>
       <button onclick="Twittar()" class="btn" id="botao" disabled>Tweetar</button>
