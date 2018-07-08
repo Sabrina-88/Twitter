@@ -23,20 +23,19 @@ function caractere(){
   if(contagem >= 0){
     if (contagem <20 && contagem >10){
       document.getElementById('restante').style.color='#F1D30A'; 
-      }
+	  }
       if (contagem <10 && contagem >=0){
       document.getElementById('restante').style.color='#E02525'; 
     }
     document.getElementById('botao').disabled="";
     }else{
-      document.getElementById('botao').disabled="disabled";
-	  
-      }
-
+      document.getElementById('botao').disabled="disabled"; 
+     }
 }
 
 //função acrescentar linha na textarea se for necessario
 function autoSize() {
-    document.getElementById('oqueEscrevi').rows += 1;
+    if(event.keyCode==13){
+		document.getElementById('oqueEscrevi').rows += 1;
+	}
 }
- 
