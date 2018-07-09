@@ -1,5 +1,6 @@
 var limpar = document.getElementById("oqueEscrevi");
 var pegartweet =  document.getElementById("oqueEscrevi");
+var atual = document.getElementById('oqueEscrevi');
 
 //funcao pegar tweet, imprimir no HTML e limpar textArea
 function Twittar() {
@@ -16,7 +17,7 @@ function Twittar() {
 function caractere(){
   var max = new Number();
   max = 140;
-  var atual = document.getElementById('oqueEscrevi').value.length;
+  atual = document.getElementById('oqueEscrevi').value.length;
   var contagem = new Number();
   contagem = max - atual;
   document.getElementById('restante').innerHTML = contagem;
@@ -33,9 +34,19 @@ function caractere(){
      }
 }
 
-//função acrescentar linha na textarea se for necessario
+//função acrescentar linha na textarea se teclar Enter ou se texto maior que o espaço da textArea
 function autoSize() {
-    if(event.keyCode==13){
+	atual = document.getElementById('oqueEscrevi').value.length;
+	console.log(atual);
+    if(event.keyCode==13 ){
 		document.getElementById('oqueEscrevi').rows += 1;
 	}
+	if( atual > 140){
+		document.getElementById('oqueEscrevi').rows += 1;
+	}
+}
+// funcao aumentar height do textarea com scrollHeight
+function setFunction() {
+     pegartweet.style.height = "";
+    pegartweet.style.height = pegartweet.scrollHeight + "px";
 }
