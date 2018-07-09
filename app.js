@@ -1,17 +1,30 @@
 var limpar = document.getElementById("oqueEscrevi");
 var pegartweet =  document.getElementById("oqueEscrevi");
 var atual = document.getElementById('oqueEscrevi');
+var postar =   document.getElementById("aparecerAqui");
+var resposta = document.createElement('p');
 
 //funcao pegar tweet, imprimir no HTML e limpar textArea
 function Twittar() {
   pegartweet =  document.getElementById("oqueEscrevi").value;
-  var resposta = document.createElement('p');
+  resposta = document.createElement('p');
   resposta.textContent = pegartweet;
-  var postar =   document.getElementById("aparecerAqui");
+ postar =   document.getElementById("aparecerAqui");
   postar.appendChild(resposta);
+  
   event.preventDefault();
-  limpar.value = "";
-}
+
+ 
+   limpar.value = "";hora();
+   
+   function hora() {
+		var p = document.createElement("p");
+		hora = Date();
+		p.setAttribute("class", "postDate");
+		p.innerHTML = hora;
+		resposta.appendChild(p);
+	}
+	}
 
 //funcao contar caractere, desativar botao e alterar cores dos caracteres restantes
 function caractere(){
@@ -37,7 +50,6 @@ function caractere(){
 //função acrescentar linha na textarea se teclar Enter ou se texto maior que o espaço da textArea
 function autoSize() {
 	atual = document.getElementById('oqueEscrevi').value.length;
-	console.log(atual);
     if(event.keyCode==13 ){
 		document.getElementById('oqueEscrevi').rows += 1;
 	}

@@ -12,16 +12,32 @@
   <h1 id="twitter">Twitter</h1>
 </header>
 <div class="main">
-  <div class="feed">
-    <form id="formulario">
-      <textArea class="textArea" rows="6" id="oqueEscrevi"  placeholder="What´s happening..." value="" onKeyUp="caractere()" onKeyDown="caractere()" onKeyPress="autoSize()" oninput="setFunction()"></textArea>
-      <hr>
-      <span id="restante"></span>
-      <button onclick="Twittar()" class="btn" id="botao" disabled>Tweetar</button>
-    </form>
+  <div id="parte1">
+    <div id="profile"> 
+    <img src="images/Perfil.jpg" alt="foto de perfil do ususario" id="imgProfile">
+      <h3>@Sabrina</h3>
+      <div id="ul">
+        <li class="infosTop">Follower</li>
+        <li class="infosTop">Following</li>
+        <li class="infosTop">Favorites</li>
+        </div>
+        <div id="ul">
+        <li class="infosMiddle">960</li>
+        <li class="infosMiddle">1254</li>
+        <li class="infosMiddle">862</li>
+      </div>
+    </div>
+    <div class="feed">
+      <form id="formulario">
+        <textArea class="textArea" rows="6" id="oqueEscrevi"  placeholder="What´s happening..." value="" onKeyUp="caractere()" onKeyDown="caractere()" onKeyPress="autoSize()" oninput="setFunction()"></textArea>
+        <hr>
+        <span id="restante"></span>
+        <button onclick="Twittar()" class="btn" id="botao" disabled>Tweetar</button>
+      </form>
+    </div>
   </div>
   <div id="parte2">
-    <div class="resposta" id="aparecerAqui"> </div>
+    <div class="resposta" id="aparecerAqui"></div>
   </div>
 </div>
 <script src="app.js"></script>
