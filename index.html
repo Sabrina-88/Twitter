@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/javascript" href="app.js">
+
 <title>Twitter</title>
 </head>
 
@@ -12,7 +13,7 @@
   <h1 id="twitter">Twitter</h1>
 </header>
 <div class="main">
-  <div id="parte1">
+  <div id="part1">
     <div id="profile"> 
     <img src="images/Perfil.jpg" alt="foto de perfil do ususario" id="imgProfile">
       <h3>@Sabrina</h3>
@@ -28,16 +29,16 @@
       </div>
     </div>
     <div class="feed">
-      <form id="formulario">
-        <textArea class="textArea" rows="6" id="oqueEscrevi"  placeholder="What´s happening..." value="" onKeyUp="caractere()" onKeyDown="caractere()" onKeyPress="autoSize()" oninput="setFunction()"></textArea>
+      <form id="form">
+        <textArea class="textArea" rows="6" id="tweet"  placeholder="What´s happening..." value="" onKeyUp="caractere()" onKeyDown="caractere()" onKeyPress="autoSize()" oninput="setFunction()"></textArea>
         <hr>
-        <span id="restante"></span>
-        <button onclick="Twittar()" class="btn" id="botao" disabled>Tweetar</button>
+        <span id="rest"></span>
+        <button onclick="Twittar()" class="btn" id="buttonTweet" disabled>Tweetar</button>
       </form>
     </div>
   </div>
-  <div id="parte2">
-    <div class="resposta" id="aparecerAqui"></div>
+  <div id="part2">
+    <div class="timeline" id="showIt"></div>
   </div>
 </div>
 <script src="app.js"></script>

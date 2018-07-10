@@ -24,7 +24,7 @@ h1 {
 	  justify-content: start;
 	flex-direction: column;
 }
-#parte1{
+#part1{
 	 display: flex;
     align-items: center;
 	justify-content: center;
@@ -111,7 +111,7 @@ hr {
 	border-radius: 5px;
 	margin-bottom: 20px;
 }
-.parte2 {
+.part2 {
 	height: 200px;
 	width: 500px;
 	display: flex;
@@ -120,7 +120,7 @@ hr {
 	align-items: center;
 	background-color: rgba(229,235,239,0.82);
 }
-#aparecerAqui {
+#showIt {
 	height: 100px;
 	width: 450px;
 	display: block;
@@ -134,7 +134,7 @@ p{
 	background-color: white;
 	padding: 30px;
 }
-#restante {
+#rest {
 	display: flex;
 	justify-content: flex-end;
 	color: #6AD1F2;
@@ -145,6 +145,6 @@ p{
 	.postDate {
 	border-top: 1px solid #7c7c7c;
 	color: #7c7c7c;
-	font-size:14px;
+	font-size:12px;
 }
 

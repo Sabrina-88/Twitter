@@ -1,64 +1,65 @@
-var limpar = document.getElementById("oqueEscrevi");
-var pegartweet =  document.getElementById("oqueEscrevi");
-var atual = document.getElementById('oqueEscrevi');
-var postar =   document.getElementById("aparecerAqui");
-var resposta = document.createElement('p');
+var clear = document.getElementById("tweet");
+var getTweet =  document.getElementById("tweet");
+var quant = document.getElementById('tweet');
+var toPost =   document.getElementById("showIt");
+var timeline = document.createElement('p');
 
-//funcao pegar tweet, imprimir no HTML e limpar textArea
+//funcao gettweet, imprimir no HTML e limpar textArea
 function Twittar() {
-  pegartweet =  document.getElementById("oqueEscrevi").value;
-  resposta = document.createElement('p');
-  resposta.textContent = pegartweet;
- postar =   document.getElementById("aparecerAqui");
-  postar.appendChild(resposta);
+  getTweet =  document.getElementById("tweet").value;
+  timeline = document.createElement('p');
+  timeline.textContent = getTweet;
+ toPost =   document.getElementById("showIt");
+  toPost.appendChild(timeline);
   
   event.preventDefault();
 
  
-   limpar.value = "";hora();
+   clear.value = "";
+   hour();
    
-   function hora() {
+   function hour() {
 		var p = document.createElement("p");
-		hora = Date();
+		hour = Date();
 		p.setAttribute("class", "postDate");
-		p.innerHTML = hora;
-		resposta.appendChild(p);
+		p.innerHTML = hour;
+		timeline.appendChild(p);
 	}
 	}
 
-//funcao contar caractere, desativar botao e alterar cores dos caracteres restantes
+//funcao contar caractere, desativar buttonTweet e alterar cores dos caracteres restantes
 function caractere(){
   var max = new Number();
   max = 140;
-  atual = document.getElementById('oqueEscrevi').value.length;
-  var contagem = new Number();
-  contagem = max - atual;
-  document.getElementById('restante').innerHTML = contagem;
-  if(contagem >= 0){
-    if (contagem <20 && contagem >10){
-      document.getElementById('restante').style.color='#F1D30A'; 
+  quant = document.getElementById('tweet').value.length;
+  var count = new Number();
+  count = max - quant;
+  document.getElementById('rest').innerHTML = count;
+  if(count >= 0){
+    if (count <20 && count >10){
+      document.getElementById('rest').style.color='#F1D30A'; 
 	  }
-      if (contagem <10 && contagem >=0){
-      document.getElementById('restante').style.color='#E02525'; 
+      if (count <10 && count >=0){
+      document.getElementById('rest').style.color='#E02525'; 
     }
-    document.getElementById('botao').disabled="";
+    document.getElementById('buttonTweet').disabled="";
     }else{
-      document.getElementById('botao').disabled="disabled"; 
+      document.getElementById('buttonTweet').disabled="disabled"; 
      }
 }
 
 //função acrescentar linha na textarea se teclar Enter ou se texto maior que o espaço da textArea
 function autoSize() {
-	atual = document.getElementById('oqueEscrevi').value.length;
+	quant = document.getElementById('tweet').value.length;
     if(event.keyCode==13 ){
-		document.getElementById('oqueEscrevi').rows += 1;
+		document.getElementById('tweet').rows += 1;
 	}
-	if( atual > 140){
-		document.getElementById('oqueEscrevi').rows += 1;
+	if( quant > 140){
+		document.getElementById('tweet').rows += 1;
 	}
 }
 // funcao aumentar height do textarea com scrollHeight
 function setFunction() {
-     pegartweet.style.height = "";
-    pegartweet.style.height = pegartweet.scrollHeight + "px";
+     getTweet.style.height = "";
+    getTweet.style.height = getTweet.scrollHeight + "px";
 }
