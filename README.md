@@ -11,9 +11,9 @@ Project Laboratoria - replicate the Twitter news feed.
 * Jquery
 
 ## Future versions
-** Version 002 - ** Refactor code using Jquery to make it more functional.
+**Version 002 -** Refactor code using Jquery to make it more functional.
 
-** Version 003 - ** Create option to delete and edit tweet.
+**Version 003 -** Create option to delete and edit tweet.
 
 #
 
